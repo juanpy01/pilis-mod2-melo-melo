@@ -5,9 +5,9 @@ function onClick(event) {
   console.log(event);
 
   const mensaje = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    message: document.getElementById("message").value,
+    name: document.getElementById("shop").value,
+    email: document.getElementById("name").value,
+    message: document.getElementById("cell").value,
   };
   console.log(mensaje);
 

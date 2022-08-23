@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Reset */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    font-family: 'Montserrat', 'sans-serif';
+    background: #ba3940;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+/* Contact */
+#contact {
+    padding: 120px 0;
+}
+
+.contact-form {
+    float: left;
+    width: 45%;
+    padding: 20px;
+}
+
+.contact-title {
+    float: right;
+    width: 55%;
+    padding-top: 100px;
+    text-align: center;
+}
+
+form .form-group {
+    margin-bottom: 1rem;
+}
+
+form .form-control {
+    /* display: block; */
+    width: 100%;
+    padding: 0.375rem 0.7rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    border: none;
+
+}
+
+/* Boton Form */
+.btn {
+    display: inline-block;
+    font-size: 15px;
+    padding: 14px 23px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.btn-light {
+    background: #841934;
+    border: 1px solid #841934;
+    color: #fff;
+    width: 100%;
+}
+
+.btn-light:hover {
+    background: #fff;
+    border: 1px solid #841934;
+    color: #841934;
+}
