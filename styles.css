@@ -19,18 +19,18 @@ body {
 a {
     text-decoration: none;
 }
-/* Contact */
-#contact {
+/* Register */
+#register {
     padding: 120px 0;
 }
 
-.contact-form {
+.register-form {
     float: left;
     width: 45%;
     padding: 20px;
 }
 
-.contact-title {
+.register-title {
     float: right;
     width: 55%;
     padding-top: 100px;
@@ -53,7 +53,8 @@ form .form-control {
 
 /* Boton Form */
 .btn {
-    display: inline-block;
+    /* display: inline-block; */
+    display: grid;
     font-size: 15px;
     padding: 14px 23px;
     cursor: pointer;
@@ -74,4 +75,39 @@ form .form-control {
     background: #fff;
     border: 1px solid #841934;
     color: #841934;
+}
+
+/* Weather */
+#content {
+    text-align: center;
+    /*display: grid;*/
+    display: inline-block;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+#box1,
+#box2,
+#box3 {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 20%;
+    width: 200px;
+    height: 200px;
+}
+
+#box1 {
+    background-color: rgba(0, 0, 0, 0.767);
+    color: azure;
+}
+
+#box2 {
+    background-color: darkslateblue;
+    color: azure;
+}
+
+#box3 {
+    background-color: #2ab2ea;
+    color: azure;
 }
