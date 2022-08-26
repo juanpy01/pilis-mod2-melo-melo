@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    font-family: 'Montserrat', 'sans-serif';
+    background: #fff5e1;
+    color: #7d7f81;
+}
+
+.cabecera{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: #781c68;
+    overflow: hidden;
+}
+
+.navbar{
+    width: 80%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.link{
+    color: #ffd39a;
+    text-decoration: none;
+    padding: 70px 30px;
+    font-weight: 500;
+}
+
+.link:hover{
+    background-color: #319da0;
+    color: #781c68;
+    font-weight: 700;
+    transition: 0.7s;
+    border-radius: 90px;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.logo img{
+    height: 100px;
+}
+
+.main{
+    width: 100%;
+}
+
+.contenido{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.hsection {
+    width: 60%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hsection h1{
+    margin: 50px 0;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.hsection h2{
+    margin: 50px 0;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.hsection p{
+    font-weight: 400;
+    text-align: justify;
+    margin: 5px 0;
+}
+
+.imagen-logo{
+    width: 40%;
+    padding-right: 50px;
+    padding-bottom: 100px;
+}
+
+.imagen-logo img{
+    height: 80%;
+}
+
+.video-evento{
+    width: 40%;
+    padding-left: 50px;
+}
+
+.imagen-nosotros{
+    width: 40%;
+    padding-right: 50px;
+}
+
+.imagen-nosotros img{
+    width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+/* Contact */
+#contact {
+    padding: 120px 0;
+}
+
+.contact-form {
+    float: left;
+    width: 45%;
+    padding: 20px;
+}
+
+.contact-title {
+    float: right;
+    width: 55%;
+    padding-top: 100px;
+    text-align: center;
+}
+
+form .form-group {
+    margin-bottom: 1rem;
+}
+
+form .form-control {
+    /* display: block; */
+    width: 100%;
+    padding: 0.375rem 0.7rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    border: none;
+
+}
+
+/* Boton Form */
+.btn {
+    display: inline-block;
+    font-size: 15px;
+    padding: 14px 23px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.btn-light {
+    background: #841934;
+    border: 1px solid #841934;
+    color: #fff;
+    width: 100%;
+}
+
+.btn-light:hover {
+    background: #fff;
+    border: 1px solid #841934;
+    color: #841934;
+}

@@ -1,3 +1,4 @@
+/* Formulario */
 function onClick(event) {
   event.preventDefault();
   this.style.backgroundColor = "black";
