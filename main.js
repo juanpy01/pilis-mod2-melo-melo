@@ -65,14 +65,14 @@ window.addEventListener("load", () => {
   let tempValue = document.getElementById("temp-value");
   let tempDesc = document.getElementById("temp-desc");
 
-  let ubic = document.getElementById("ubic");
+  //let ubic = document.getElementById("ubic");
   let iconoAnimado = document.getElementById("icono-animado");
 
   let vientoVelocidad = document.getElementById("viento-velocidad");
 
   lon = -65.3321146;
   lat = -24.182653;
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&lang=es&appid=${API_KEY}`;
 
   //ubicación por ciudad
   //const url = `https://api.openweathermap.org/data/2.5/weather?q=Madrid&lang=es&units=metric&appid=${AQUI_VIENE_TU_API_KEY}`
@@ -85,7 +85,7 @@ window.addEventListener("load", () => {
       tempValue.textContent = `${temp} ° C`;
       let desc = data.weather[0].description;
       tempDesc.textContent = desc.toUpperCase();
-      ubic.textContent = data.name;
+      //ubic.textContent = `Ciudad Cultural`;
       vientoVelocidad.textContent = `${data.wind.speed} m/s`;
 
       //para iconos estáticos
