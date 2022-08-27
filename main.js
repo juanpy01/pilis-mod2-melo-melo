@@ -20,7 +20,7 @@ function onClick(event) {
     .then((response) => response.json())
     .then((json) => {
       console.log(json);
-      Swal.fire("Enviado", "Gracias por tu comentario", "success");
+      Swal.fire("Enviado", "Gracias por contactarnos", "success");
       cleanForm();
       /* redirectUrl(); */
     })
