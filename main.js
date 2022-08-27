@@ -22,7 +22,6 @@ function onClick(event) {
       console.log(json);
       Swal.fire("Enviado", "Gracias por contactarnos", "success");
       cleanForm();
-      /* redirectUrl(); */
     })
     .catch((err) => console.log(err));
 }
@@ -39,23 +38,6 @@ let boton = document.getElementById("enviar");
 
 boton.addEventListener("click", onClick);
 
-/* Async - Await */
-/* async function getIp() {
-  try {
-    let response = await fetch("https://api.ipify.org/?format=json");
-    let ipResponse = await response.json();
-    console.log(ipResponse);
-
-    let responseLocation = await fetch(
-      "http://ip-api.com/json/" + ipResponse.ip
-    );
-    let locationResponse = await responseLocation.json();
-    console.log(locationResponse);
-  } catch {
-    console.log("Algo paso, no se pudo resolver...");
-  }
-}
-getIp(); */
 
 /* Weather */
 window.addEventListener("load", () => {
@@ -66,7 +48,6 @@ window.addEventListener("load", () => {
   let tempValue = document.getElementById("temp-value");
   let tempDesc = document.getElementById("temp-desc");
 
-  //let ubic = document.getElementById("ubic");
   let iconoAnimado = document.getElementById("icono-animado");
 
   let vientoVelocidad = document.getElementById("viento-velocidad");
@@ -75,8 +56,7 @@ window.addEventListener("load", () => {
   lat = -24.182653;
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&lang=es&appid=${API_KEY}`;
 
-  //ubicación por ciudad
-  //const url = `https://api.openweathermap.org/data/2.5/weather?q=Madrid&lang=es&units=metric&appid=${AQUI_VIENE_TU_API_KEY}`
+  
   fetch(url)
     .then((response) => {
       return response.json();
@@ -86,15 +66,8 @@ window.addEventListener("load", () => {
       tempValue.textContent = `${temp} ° C`;
       let desc = data.weather[0].description;
       tempDesc.textContent = desc.toUpperCase();
-      //ubic.textContent = `Ciudad Cultural`;
       vientoVelocidad.textContent = `${data.wind.speed} m/s`;
 
-      //para iconos estáticos
-      //const urlIcon = `http://openweathermap.org/img/wn/${iconCode}.png`
-      //icono.src = urlIcon
-      //console.log(data.weather[0].icon)
-
-      //para iconos dinámicos
       console.log(data.weather[0].main);
       switch (data.weather[0].main) {
         case "Thunderstorm":
