@@ -127,15 +127,6 @@ body {
     width: 90%;
 }
 
-
-
-
-
-
-
-
-
-
 /* Contact */
 #contact {
     padding: 120px 0;
@@ -170,7 +161,7 @@ form .form-control {
 
 /* Boton Form */
 .btn {
-    display: inline-block;
+    display: grid;
     font-size: 15px;
     padding: 14px 23px;
     cursor: pointer;
@@ -191,4 +182,84 @@ form .form-control {
     background: #fff;
     border: 1px solid #841934;
     color: #841934;
+}
+
+/* Weather */
+#weather {
+    display: flex;
+    justify-content: center;
+}
+#content {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+#box1,
+#box2,
+#box3 {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    /* padding-top: 10%; */
+    width: 200px;
+    height: 200px;
+}
+
+#temp-value {
+    padding-bottom: 10px;
+}
+
+#box1 {
+    /* padding-top: 40px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.767);
+    color: azure;
+}
+
+#box2 {
+    padding-top: 10%;
+    background-color: darkslateblue;
+    color: azure;
+}
+
+#box3 {
+    padding-top: 75px;
+    background-color: #2ab2ea;
+    color: azure;
+}
+
+#ubic {
+    margin: 0%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #781C68;
+    height: 150px;
+}
+
+.btn-wspp :hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.btn-wspp img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    width: 110px;
+    height: 110px;
+}
+
+.btn-title {
+    padding-right: 50px;
 }
