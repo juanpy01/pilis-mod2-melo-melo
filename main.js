@@ -1,4 +1,4 @@
-/* Register */
+/* Formulario */
 function onClick(event) {
   event.preventDefault();
   this.style.backgroundColor = "black";
@@ -36,6 +36,7 @@ function redirectUrl() {
 }
 
 let boton = document.getElementById("enviar");
+
 boton.addEventListener("click", onClick);
 
 /* Async - Await */

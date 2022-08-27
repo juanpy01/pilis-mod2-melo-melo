@@ -2,9 +2,9 @@
 
 /* Reset */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -14,27 +14,131 @@ html {
 html,
 body {
     font-family: 'Montserrat', 'sans-serif';
-    background: #ba3940;
-    color: #ffffff;
+    background: #fff5e1;
+    color: #7d7f81;
 }
 
-a {
-    text-decoration: none;
+.cabecera{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: #781c68;
+    overflow: hidden;
 }
-/* Register */
-#register {
+
+.navbar{
+    width: 80%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.link{
+    color: #ffd39a;
+    text-decoration: none;
+    padding: 70px 30px;
+    font-weight: 500;
+}
+
+.link:hover{
+    background-color: #319da0;
+    color: #781c68;
+    font-weight: 700;
+    transition: 0.7s;
+    border-radius: 90px;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.logo img{
+    height: 100px;
+}
+
+.main{
+    width: 100%;
+}
+
+.contenido{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.hsection {
+    width: 60%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.hsection h1{
+    margin: 50px 0;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.hsection h2{
+    margin: 50px 0;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.hsection p{
+    font-weight: 400;
+    text-align: justify;
+    margin: 5px 0;
+}
+
+.imagen-logo{
+    width: 40%;
+    padding-right: 50px;
+    padding-bottom: 100px;
+}
+
+.imagen-logo img{
+    height: 80%;
+}
+
+.video-evento{
+    width: 40%;
+    padding-left: 50px;
+}
+
+.imagen-nosotros{
+    width: 40%;
+    padding-right: 50px;
+}
+
+.imagen-nosotros img{
+    width: 90%;
+}
+
+/* Contact */
+#contact {
     padding: 120px 0;
 }
 
-.register-form {
+.contact-form {
     float: left;
     width: 45%;
     padding: 20px;
 }
 
-.register-title {
+.contact-title {
     float: right;
     width: 55%;
     padding-top: 100px;
@@ -57,7 +161,6 @@ form .form-control {
 
 /* Boton Form */
 .btn {
-    /* display: inline-block; */
     display: grid;
     font-size: 15px;
     padding: 14px 23px;
